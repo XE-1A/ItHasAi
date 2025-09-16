@@ -1,9 +1,11 @@
 [package]
-name = "itHasAI"
-version = "0.1.0"
+name = "itHasAi"
+version = "0.0.1"
 edition = "2024"
 
 [dependencies]
 bevy = "0.16.1"
 strum = { version = "0.27.2", features = ["derive"] }
 
+[profile.release]
+opt-level = 's'
