@@ -2455,8 +2455,8 @@ dependencies = [
 ]
 
 [[package]]
-name = "itHasAI"
-version = "0.1.0"
+name = "itHasAi"
+version = "0.0.1"
 dependencies = [
  "bevy",
  "strum 0.27.2",
