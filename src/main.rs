@@ -135,7 +135,13 @@ pub enum ResourceType {
 
 fn main() {
     App::new()
-        .add_plugins(DefaultPlugins)
+        .add_plugins(DefaultPlugins.set(WindowPlugin {
+            primary_window: Some(Window {
+                fit_canvas_to_parent: true,
+                ..default()
+            }),
+            ..default()
+        }))
         .add_plugins(ui_plugin)
         .add_systems(Startup, (create_ui, create_resources))
         .add_systems(Update, (button_listener_system, render_resource_system))
