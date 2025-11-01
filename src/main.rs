@@ -4,7 +4,6 @@ use bevy::{
     DefaultPlugins,
     app::{App, Startup},
     color::{Color, Srgba},
-    core_pipeline::core_2d::Camera2d,
     ecs::{children, component::Component, system::Commands},
     prelude::*,
     ui::{BackgroundColor, Node, Val},
